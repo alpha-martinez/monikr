@@ -1,10 +1,11 @@
 <!-- {% extends 'base.html' %} -->
 {% load cloudinary %}
 {% load static %}
-
 {% block content %}
+
      <!-- A standard form for sending the image data to your server -->
   <div id='backend_upload'>
+    <a href="/artist">go back</a>
     <h1>upload a photo</h1>
     <form action="{% url 'upload' %}" method="post" enctype="multipart/form-data">
       {% csrf_token %}
